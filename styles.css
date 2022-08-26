@@ -1,6 +1,7 @@
 :root{
     --heading-font-family: 'Playfair Display', serif;
     --default-font-family: 'Poppins', sans-serif;
+    --default-color:#ff6f41;
 }
 
 body {
@@ -36,7 +37,7 @@ p {
 
 .hero{
     text-align: center;
-    background-color:#F9F7FE;
+    background-color:#f5eee6;
     padding: 160px 20px;
 }
 
@@ -56,7 +57,7 @@ p {
 }
 
 .btn-branding{
-   background:#6C63FF ;
+   background: var(--default-color) ;
    border-radius: 4px;
    color: white;
    font-size: 18px;
@@ -65,8 +66,8 @@ p {
 }
 
 .btn-branding-outline{
-    color:#6C63FF ;
-    border: 1px solid #6C63FF;
+    color:var(--default-color);
+    border: 1px solid var(--default-color);
     border-radius: 4px;
     font-size: 18px;
     line-height: 27px;
@@ -83,7 +84,7 @@ p {
 }
 
 .content-container{
-    padding: 160px 20px;
+    padding: 100px 20px;
 }
 
 .content h2{
@@ -105,9 +106,48 @@ p {
     padding: 30px;
 }
 
+.logo{
+    width: 150px;
+}
+
+.logo-small{
+    width: 50px;
+}
+
+nav{
+    padding: 20px 0;
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+    line-height: 50px;
+    margin-left: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #272142;
+    transform: all 100ms ease-in-out;
+}
+
+nav a:hover, nav li.active a{
+    color: var(--default-color);
+}
+
+nav ul{
+padding: 0;
+margin: 0;
+}
+
 @media (max-width: 960px){
 h1{
-    font-size: 60px;
+    font-size: 64px;
+}
+
+.about h1,.project h1, .contact h1{
+    font-size: 40px;
+    line-height: 45px;
 }
 
 h2{
@@ -120,11 +160,15 @@ h2{
 
     .hero{
         text-align: center;
-        background-color:#F9F7FE;
+        background-color:#f5eee6;
         padding: 80px 20px;
     }
     
     .content{
         text-align: center;
+    }
+
+    .content-container{
+        padding: 20px 20px;
     }
 }
