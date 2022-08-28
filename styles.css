@@ -29,6 +29,10 @@ h2{
     font-size: 54px;
 }
 
+h4{
+    font-size: 40px;
+}
+
 p {
     font-weight: normal;
     font-size: 16px;
@@ -37,7 +41,7 @@ p {
 
 .hero{
     text-align: center;
-    background-color:#f5eee6;
+    background-color: #fffbe3;
     padding: 160px 20px;
 }
 
@@ -140,6 +144,30 @@ padding: 0;
 margin: 0;
 }
 
+footer .email-link{
+    text-decoration: none;
+    color: #272142;
+}
+
+footer .email-link:hover{
+    color: var(--default-color);
+}
+
+footer .social-media a{
+    color: var(--default-color);
+    padding: 10px 14px;
+    margin: 20px;
+    background-color:  #fffbe3;
+    border-radius: 50%;
+}
+
+footer .work-inquiry{
+    background-color: #fffbe3;
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+
+
 @media (max-width: 960px){
 h1{
     font-size: 64px;
@@ -160,7 +188,7 @@ h2{
 
     .hero{
         text-align: center;
-        background-color:#f5eee6;
+        background-color: #fffbe3;
         padding: 80px 20px;
     }
     
